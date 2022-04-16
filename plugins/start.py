@@ -8,10 +8,7 @@ from vars import var
 START_MSG = """
 Hi, I am **ANONYMOUS SENDER BOT.**\n
 Just Forward me Some messages or
-media and I will **Anonymize** that !!
-
-You Can too Clone me :-
-https://github.com/ProThinkerGang/Anonymous-Bot
+media and I will remove **forward tag** from that !!
 """
 
 if var.START_MESSAGE is not None:
@@ -23,7 +20,7 @@ else:
 REPLY_MARKUP = InlineKeyboardMarkup(
     [
         [InlineKeyboardButton("Caption Setting", callback_data="captz")],
-        [InlineKeyboardButton("Support Group", url="t.me/FutureCodes")],
+        [InlineKeyboardButton("Updates Channel", url="t.me/ullastv")],
     ]
 )
 
