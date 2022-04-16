@@ -8,6 +8,6 @@ class var:
     API_ID = int(os.getenv("API_ID"))  # from https://my.telegram.org/apps
     API_HASH = os.getenv("API_HASH")  # from https://my.telegram.org/apps
     START_MESSAGE = os.getenv("START_MESSAGE", None)  # Not Mandatory
-    OWNER_ID = os.getenv("OWNER_ID", None)
+    OWNER_ID = int(os.getenv("OWNER_ID", 123456))
     REDIS_URI = os.getenv("REDIS_URI", None)
     REDIS_PASS = os.getenv("REDIS_PASS", None)
